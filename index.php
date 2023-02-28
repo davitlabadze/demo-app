@@ -9,13 +9,20 @@
 </head>
 
 <body>
+    <?php
+    $name = "Dark Matter";
+    $read = false;
+
+    if ($read) {
+        $message = "you have read $name";
+    } else {
+        $message = "you have not read $name";
+    }
+    ?>
     <h1>
-        <?php
-        $greeting = "hello";
-        echo "$greeting" . " " . "world";
-        echo "\n";
-        echo "$greeting world";
-        ?>
+        You have read "<?php echo $name; ?>"
+        <?php echo $message; ?>
+        <?= $message ?>
     </h1>
 </body>
 
