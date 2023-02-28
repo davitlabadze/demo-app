@@ -9,21 +9,42 @@
 </head>
 
 <body>
-    <?php
-    $name = "Dark Matter";
-    $read = false;
+    <h1>Recommended Books</h1>
 
-    if ($read) {
-        $message = "you have read $name";
-    } else {
-        $message = "you have not read $name";
-    }
+    <?php
+    $books = [
+        "Do Androids Deam of Electric Sheep",
+        "The Langoliers",
+        "Mail Mary"
+    ]
     ?>
-    <h1>
-        You have read "<?php echo $name; ?>"
-        <?php echo $message; ?>
-        <?= $message ?>
-    </h1>
+
+    <ul>
+        <li>Do Androids Deam of Electric Sheep</li>
+        <li>The Langoliers</li>
+        <li>Mail Mary</li>
+    </ul>
+
+    <ul>
+        <?php foreach ($books as $book) {
+            echo "<li>$book</li>";
+        }
+        ?>
+    </ul>
+    <ul>
+        <?php foreach ($books as $book) : ?>
+            <li><?php echo $book; ?></li>
+
+        <?php endforeach; ?>
+    </ul>
+
+
+    <ul>
+        <?php foreach ($books as $book) : ?>
+            <li><?= $book; ?></li>
+
+        <?php endforeach; ?>
+    </ul>
 </body>
 
 </html>
