@@ -26,24 +26,35 @@
             'purchaseUrl' => 'http://example.com'
         ]
     ];
+    //this filter
 
-    function filterByAuthor($books, $author)
-    {
-        $filterdBooks = [];
+    // function filter($items, $fn)
+    // {
+    //     $filterItems = [];
 
-        foreach ($books as $book) {
-            if ($book['author'] == $author) {
-                $filterdBooks[] = $book;
-            }
-        }
-        return $filterdBooks;
-    }
+    //     foreach ($items as $item) {
+    //         if ($fn($item)) {
+    //             $filterItems[] = $item;
+    //         }
+    //     }
+    //     return $filterItems;
+    // }
+
+    // $filteredBooks = filter($books, function ($book) {
+    //     return $book['relaseYear'] == 2011;
+    // });
+
+    //OR
+
+    $filteredBooks = array_filter($books, function ($book) {
+        return $book['relaseYear'] == 2011;
+    });
 
 
     ?>
 
     <ul>
-        <?php foreach (filterByAuthor($books, 'Andy Scott') as $book) : ?>
+        <?php foreach ($filteredBooks as $book) : ?>
             <li>
                 <a href="<?= $book['purchaseUrl'] ?>">
                     <?= $book['name']; ?> (<?= $book['relaseYear'] ?>) - By <?= $book['author'] ?></a>
