@@ -16,25 +16,42 @@
         [
             'name' => 'Do Androids Dream of Electroc Sheep',
             'author' => 'Philip K. Dick',
+            'relaseYear' => "2015",
             'purchaseUrl' => 'http://example.com'
         ],
         [
             'name' => 'Project Mail Mary',
             'author' => 'Andy Scott',
+            'relaseYear' => "2011",
             'purchaseUrl' => 'http://example.com'
         ]
-    ]
+    ];
+
+    function filterByAuthor($books, $author)
+    {
+        $filterdBooks = [];
+
+        foreach ($books as $book) {
+            if ($book['author'] == $author) {
+                $filterdBooks[] = $book;
+            }
+        }
+        return $filterdBooks;
+    }
+
+
     ?>
 
     <ul>
-        <?php foreach ($books as $book) : ?>
+        <?php foreach (filterByAuthor($books, 'Andy Scott') as $book) : ?>
             <li>
                 <a href="<?= $book['purchaseUrl'] ?>">
-                    <?= $book['name']; ?> </a>
-
+                    <?= $book['name']; ?> (<?= $book['relaseYear'] ?>) - By <?= $book['author'] ?></a>
             </li>
         <?php endforeach; ?>
     </ul>
+
+
 </body>
 
 </html>
