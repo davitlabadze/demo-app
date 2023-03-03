@@ -2,20 +2,13 @@
 
 require 'functions.php';
 // require 'router.php';
+require 'Database.php';
 
 
-// Connect to our MYSQL database.
-//charset=utf8nb4;
-$dsn = "mysql:host=localhost;post=3306;dbname=demoapp;user=root;password=root;";
+$db = new Database();
+// "select * from posts where id = 1"
+$posts = $db->query("select * from posts")->fetchAll(PDO::FETCH_ASSOC);
 
-$pdo = new PDO($dsn);
-
-$statment = $pdo->prepare("select * from posts");
-
-
-$statment->execute();
-
-$posts = $statment->fetchAll(PDO::FETCH_ASSOC);
 
 // dd($posts);
 
