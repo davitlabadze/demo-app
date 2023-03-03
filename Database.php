@@ -4,12 +4,14 @@ class Database
 {
     public $connection;
 
-    public function __construct()
+    public function __construct($config, $username = 'root', $password = 'root')
     {
-        //charset=utf8nb4;
-        $dsn = "mysql:host=localhost;post=3306;dbname=demoapp;user=root;password=root;";
+        // $dsn = "mysql:host={$config['host']};post={$config['port']};dbname={$config['dbname']};charset={$config['charset']};";
+        $dsn = 'mysql:' . http_build_query($config, '', ';');
 
-        $this->connection = new PDO($dsn);
+        $this->connection = new PDO($dsn, $username, $password, [
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        ]);
     }
     public function query($query)
     {

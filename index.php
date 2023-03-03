@@ -5,9 +5,13 @@ require 'functions.php';
 require 'Database.php';
 
 
-$db = new Database();
+$config = require('config.php');
+
+$db = new Database($config['database']);
+
+
 // "select * from posts where id = 1"
-$posts = $db->query("select * from posts")->fetchAll(PDO::FETCH_ASSOC);
+$posts = $db->query("select * from posts")->fetchAll();
 
 
 // dd($posts);
