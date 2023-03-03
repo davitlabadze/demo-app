@@ -13,14 +13,14 @@ class Database
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]);
     }
-    public function query($query)
+    public function query($query, $params = [])
     {
 
 
         $statment = $this->connection->prepare($query);
 
 
-        $statment->execute();
+        $statment->execute($params);
 
         return $statment;
     }

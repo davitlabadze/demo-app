@@ -26,6 +26,7 @@
 
 [Extract a php database class](https://github.com/davitlabadze/demo-app/tree/3a7a70bd53c8173f80e36e3868e2f32354d68589)
 
+[Environments and Configuration Flexibility](https://github.com/davitlabadze/demo-app/tree/813985ad5ee830a744cc986a7c475cf8aef0729f)
 
 
 

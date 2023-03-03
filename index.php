@@ -9,13 +9,10 @@ $config = require('config.php');
 
 $db = new Database($config['database']);
 
+$id = $_GET['id'];
+$query = "select * from posts where id = :id";
 
-// "select * from posts where id = 1"
-$posts = $db->query("select * from posts")->fetchAll();
+$posts = $db->query($query, [':id' => $id])->fetch();
 
 
-// dd($posts);
-
-foreach ($posts as $post) {
-    echo "<li>" . $post['title'] . "</li>";
-}
+dd($posts);
