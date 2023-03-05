@@ -31,3 +31,5 @@
 [SQL Injection Vulnerabilities Explained](https://github.com/davitlabadze/demo-app/tree/8d3a2667a80e7d1a10eb02f76f7f6aab53c67aab)
 
 [Render The Notes and Note Page](https://github.com/davitlabadze/demo-app/tree/fff737bc8bbf129089669a5979109072d8eb3eaa)
+
+[Introduction to Authorization](https://github.com/davitlabadze/demo-app/tree/2d08ea020a41f373d0418d846e85cf2251582d46)

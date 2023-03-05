@@ -3,10 +3,10 @@
 class Database
 {
     public $connection;
+    public $statment;
 
     public function __construct($config, $username = 'root', $password = 'root')
     {
-        // $dsn = "mysql:host={$config['host']};post={$config['port']};dbname={$config['dbname']};charset={$config['charset']};";
         $dsn = 'mysql:' . http_build_query($config, '', ';');
 
         $this->connection = new PDO($dsn, $username, $password, [
@@ -17,11 +17,30 @@ class Database
     {
 
 
-        $statment = $this->connection->prepare($query);
+        $this->statment = $this->connection->prepare($query);
 
 
-        $statment->execute($params);
+        $this->statment->execute($params);
 
-        return $statment;
+        return $this;
+    }
+
+    public function get()
+    {
+        return $this->statment->fetchAll();
+    }
+
+    public function find()
+    {
+        return $this->statment->fetch();
+    }
+
+    public function findOrFile()
+    {
+        $result =  $this->find();
+        if (!$result) {
+            abort();
+        }
+        return $result;
     }
 }
