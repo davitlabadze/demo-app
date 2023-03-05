@@ -28,5 +28,5 @@
 
 [Environments and Configuration Flexibility](https://github.com/davitlabadze/demo-app/tree/813985ad5ee830a744cc986a7c475cf8aef0729f)
 
-
+[SQL Injection Vulnerabilities Explained](https://github.com/davitlabadze/demo-app/tree/8d3a2667a80e7d1a10eb02f76f7f6aab53c67aab)
 
