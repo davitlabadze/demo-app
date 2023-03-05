@@ -35,3 +35,8 @@
 [Introduction to Authorization](https://github.com/davitlabadze/demo-app/tree/2d08ea020a41f373d0418d846e85cf2251582d46)
 
 [Programming is Rewriting](https://github.com/davitlabadze/demo-app/tree/21606bd69a8d46c4c1eedc39988d3042facc0eb2)
+
+[Into to forms and request methods](https://github.com/davitlabadze/demo-app/tree/8ea35f75543ce545ab2f2c87afdc04b3566ce979)
+
+[Always escape untrusted input](https://github.com/davitlabadze/demo-app/tree/791b262d705bc4585239f1f8abe9da66d2e1d9cf)
+
