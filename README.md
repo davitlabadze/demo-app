@@ -45,3 +45,5 @@
 [Extract a simple validation class](https://github.com/davitlabadze/demo-app/tree/fcc1590e95626ac9da9f8eb11720ef7109e597b0)
 
 [Resourceful Naming Conventions](https://github.com/davitlabadze/demo-app/tree/9a1b2c44161d077dead2a3adf759ea82469743f5)
+
+[Autoloading and Extraction](https://github.com/davitlabadze/demo-app/tree/e2a0c90fbd02e25c183a4733712b5aca727029da)
