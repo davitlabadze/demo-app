@@ -51,3 +51,5 @@
 [Namespace](https://github.com/davitlabadze/demo-app/tree/a98757e7fd6c9ef4d3a9424c36346989d3ce6465)
 
 [Handle multiple request methods from a controller action](https://github.com/davitlabadze/demo-app/tree/9edb29387be48a6e67a245e0aa95400f1e6a74f0)
+
+[Better PHP Router](https://github.com/davitlabadze/demo-app/tree/9edb29387be48a6e67a245e0aa95400f1e6a74f0)
