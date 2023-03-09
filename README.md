@@ -55,3 +55,5 @@
 [Better PHP Router](https://github.com/davitlabadze/demo-app/tree/9edb29387be48a6e67a245e0aa95400f1e6a74f0)
 
 [One request, One Controller](https://github.com/davitlabadze/demo-app/tree/45f4c2b0b9396e4cfef6cd73a0e8fea81210c972)
+
+[Service Container](https://github.com/davitlabadze/demo-app/tree/2881c92938e7a628260a773a8d511420bce96a14)
