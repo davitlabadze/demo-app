@@ -57,3 +57,7 @@
 [One request, One Controller](https://github.com/davitlabadze/demo-app/tree/45f4c2b0b9396e4cfef6cd73a0e8fea81210c972)
 
 [Service Container](https://github.com/davitlabadze/demo-app/tree/2881c92938e7a628260a773a8d511420bce96a14)
+
+[Updating a Resource with PATCH Requests](https://github.com/davitlabadze/demo-app/tree/f87a9bd383d51d681de78dc73d2c672ef4f16f4b)
+
+[Register a new user](https://github.com/davitlabadze/demo-app/tree/b81853fe1faa5e3a29febc9b5b555eb2d3d26468)
