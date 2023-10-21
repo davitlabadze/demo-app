@@ -67,3 +67,5 @@
 [Login and Logout](https://github.com/davitlabadze/demo-app/tree/279e06d11fdca64fde4fc8a8eaaab9572449b1bd)
 
 [Extract a Form Validation Object](https://github.com/davitlabadze/demo-app/tree/bcce7c3f181a0df827708e25bcb213aab8abbb74)
+
+[Extract an Authenticator Class](https://github.com/davitlabadze/demo-app/tree/968bc141253cd304cf833dfa7a9a8f642b9d263c)
