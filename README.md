@@ -65,3 +65,5 @@
 [Manage Passwords Like This For The Remainder of Your Career](https://github.com/davitlabadze/demo-app/tree/002a8d5b3f73e2a66e9707bec2b30bbb4ba28bca)
 
 [Login and Logout](https://github.com/davitlabadze/demo-app/tree/279e06d11fdca64fde4fc8a8eaaab9572449b1bd)
+
+[Extract a Form Validation Object](https://github.com/davitlabadze/demo-app/tree/bcce7c3f181a0df827708e25bcb213aab8abbb74)
