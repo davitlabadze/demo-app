@@ -1,3 +1,9 @@
+# Run
+
+```
+php -S localhost:8000 -t public/
+```
+
 [Hello world](https://github.com/davitlabadze/demo-app/tree/4f421da1038b587774370937d787f5f403f3b59f)
 
 [variables](https://github.com/davitlabadze/demo-app/tree/e9b1730315360dc886c9349ade0c2c7f6b201994)
