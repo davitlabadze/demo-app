@@ -6,11 +6,21 @@
       "email": "labadzedato18@gmail.com"
     }
   ],
-  "require": {},
+  "require": {
+    "illuminate/collections": "^11.11"
+  },
   "autoload": {
     "psr-4": {
       "Core\\": "Core/",
       "Http\\": "Core/"
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^2.34"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
     }
   }
 }
