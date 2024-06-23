@@ -1,0 +1,16 @@
+{
+  "name": "david/demo-app",
+  "authors": [
+    {
+      "name": "davitlabadze",
+      "email": "labadzedato18@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Core\\": "Core/",
+      "Http\\": "Core/"
+    }
+  }
+}
